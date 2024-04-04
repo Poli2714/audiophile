@@ -1,3 +1,4 @@
+import { Dialog, DialogContent, DialogTrigger } from './dialog';
 import ProductCategories from './ProductCategories/ProductCategories';
 
-export { ProductCategories };
+export { Dialog, DialogContent, DialogTrigger, ProductCategories };
