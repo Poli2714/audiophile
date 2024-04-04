@@ -9,6 +9,7 @@ import {
   DialogTitle,
   DialogTrigger,
 } from './dialog';
+import Navbar from './Navbar/Navbar';
 import NavLinks from './NavLinks/NavLinks';
 import NavMenu from './NavMenu/NavMenu';
 import ProductCategories from './ProductCategories/ProductCategories';
@@ -23,6 +24,7 @@ export {
   DialogHeader,
   DialogTitle,
   DialogTrigger,
+  Navbar,
   NavLinks,
   NavMenu,
   ProductCategories,
