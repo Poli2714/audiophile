@@ -1,5 +1,6 @@
 import BrandLogo from './BrandLogo/BrandLogo';
 import Cart from './Cart/Cart';
+import CategoryPageHeader from './CategoryPageHeader/CategoryPageHeader';
 import {
   Dialog,
   DialogClose,
@@ -20,6 +21,7 @@ import StoreInfo from './StoreInfo/StoreInfo';
 export {
   BrandLogo,
   Cart,
+  CategoryPageHeader,
   Dialog,
   DialogClose,
   DialogContent,
