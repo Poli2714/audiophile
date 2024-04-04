@@ -14,6 +14,7 @@ import NavLinks from './NavLinks/NavLinks';
 import NavMenu from './NavMenu/NavMenu';
 import ProductCategories from './ProductCategories/ProductCategories';
 import { Separator } from './separator';
+import StoreInfo from './StoreInfo/StoreInfo';
 
 export {
   BrandLogo,
@@ -30,4 +31,5 @@ export {
   NavMenu,
   ProductCategories,
   Separator,
+  StoreInfo,
 };
