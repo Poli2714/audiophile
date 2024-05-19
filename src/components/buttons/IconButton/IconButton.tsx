@@ -1,6 +1,8 @@
-import { Button } from '..';
+import { Button } from '@/components/buttons';
 
-type IconButtonProps = { children: React.ReactNode };
+type IconButtonProps = {
+  children: React.ReactNode;
+};
 
 function IconButton({ children }: IconButtonProps) {
   return (
