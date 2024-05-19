@@ -5,7 +5,7 @@ import { revalidateTag } from 'next/cache';
 import { clearCart } from './clearCart';
 import { deleteAnonUser } from '@/actions/user';
 import { getCurrentUser } from '@/utils/getCurrentUser/getCurrentUser';
-import { hasUserOrderedBefore } from '@/drizzle/schema';
+import { hasUserOrderedBefore } from '@/drizzle/schema/anonOrders/handler';
 
 export async function clearCartAction() {
   const { isUserSignedIn, userId } = await getCurrentUser();
