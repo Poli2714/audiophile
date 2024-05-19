@@ -1,8 +1,7 @@
 import type { Metadata } from 'next';
 import { Manrope } from 'next/font/google';
 
-import { PageFooter } from '@/components/ui';
-import './globals.css';
+import '@/styles/globals.css';
 
 const manrope = Manrope({ subsets: ['latin'] });
 
@@ -18,10 +17,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en'>
-      <body className={manrope.className}>
-        {children}
-        <PageFooter />
-      </body>
+      <body className={`${manrope.className} bg-background`}>{children}</body>
     </html>
   );
 }
