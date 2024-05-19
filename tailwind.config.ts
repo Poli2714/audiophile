@@ -27,10 +27,18 @@ const config = {
         primary: {
           DEFAULT: 'hsl(var(--primary))',
           foreground: 'hsl(var(--primary-foreground))',
+          hover: 'hsl(var(--primary-hover))',
         },
         secondary: {
-          DEFAULT: 'hsl(0, 0%, 6%, 0.5)',
-          hover: 'hsl(22, 65%, 57%, 0.9)',
+          DEFAULT: 'hsl(var(--secondary))',
+          foreground: 'hsl(var(--secondary-foreground))',
+          hover: 'hsl(var(--secondary-hover))',
+          hover_foreground: 'hsl(var(--secondary-hover-foreground))',
+        },
+        featured: {
+          DEFAULT: 'hsl(var(--featured))',
+          foreground: 'hsl(var(--featured-foreground))',
+          hover: 'hsl(var(--featured-hover))',
         },
         destructive: {
           DEFAULT: 'hsl(var(--destructive))',
