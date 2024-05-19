@@ -1,9 +1,6 @@
 import { BrandLogo, NavLinks } from '@/components/ui';
 import { Cart, NavMenu, Profile } from './components';
 
-// import { UserInfo } from '@/types/Users';
-//
-
 type NavbarProps = {
   isUserSignedIn: boolean;
   userName: string | undefined | null;
