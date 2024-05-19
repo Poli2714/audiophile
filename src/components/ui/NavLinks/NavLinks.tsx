@@ -1,20 +1,13 @@
-import Link from 'next/link';
+import { NavItem } from './components';
 
-const productCategories = ['HOME', 'HEADPHONES', 'SPEAKERS', 'EARPHONES'];
+const navItemLabels = ['home', 'headphones', 'speakers', 'earphones'];
 
 function NavLinks() {
   return (
     <>
-      {productCategories.map((category, i) => (
+      {navItemLabels.map((label, i) => (
         <li key={i}>
-          <Link
-            className='text-sm font-semibold tracking-widest hover:text-primary/90'
-            href={
-              category === 'HOME' ? '/' : `/category/${category.toLowerCase()}`
-            }
-          >
-            {category}
-          </Link>
+          <NavItem label={label} />
         </li>
       ))}
     </>
