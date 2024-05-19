@@ -1,3 +1,5 @@
+'use server';
+
 import { eq } from 'drizzle-orm';
 
 import { anonCartItems } from '@/drizzle/schema/anonCartItems/schema';
