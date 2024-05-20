@@ -1,7 +1,14 @@
 import { AlertDialog, AlertDialogContent } from './alert-dialog';
 import { Avatar, AvatarFallback, AvatarImage } from './avatar';
 import BrandLogo from './BrandLogo/BrandLogo';
-import { Card, CardContent, CardFooter, CardHeader, CardTitle } from './card';
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from './card';
 import CartItem from './CartItem/CartItem';
 import CategoryCardList from './CategoryCardList/CategoryCardList';
 import CheckoutProductQuantity from './CheckoutProductQuantity/CheckoutProductQuantity';
@@ -36,6 +43,7 @@ export {
   BrandLogo,
   Card,
   CardContent,
+  CardDescription,
   CardFooter,
   CardHeader,
   CardTitle,
