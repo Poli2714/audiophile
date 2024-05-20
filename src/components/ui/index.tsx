@@ -1,6 +1,10 @@
+import { AlertDialog, AlertDialogContent } from './alert-dialog';
+import { Avatar, AvatarFallback, AvatarImage } from './avatar';
 import BrandLogo from './BrandLogo/BrandLogo';
-import Cart from './Cart/Cart';
-import CategoryPageHeader from './CategoryPageHeader/CategoryPageHeader';
+import { Card, CardContent, CardFooter, CardHeader, CardTitle } from './card';
+import CartItem from './CartItem/CartItem';
+import CategoryCardList from './CategoryCardList/CategoryCardList';
+import CheckoutProductQuantity from './CheckoutProductQuantity/CheckoutProductQuantity';
 import {
   Dialog,
   DialogClose,
@@ -10,18 +14,34 @@ import {
   DialogTitle,
   DialogTrigger,
 } from './dialog';
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from './dropdown-menu';
 import Navbar from './Navbar/Navbar';
 import NavLinks from './NavLinks/NavLinks';
-import NavMenu from './NavMenu/NavMenu';
 import PageFooter from './PageFooter/PageFooter';
-import ProductCategories from './ProductCategories/ProductCategories';
+import ProductCard from './ProductCard/ProductCard';
 import { Separator } from './separator';
 import StoreInfo from './StoreInfo/StoreInfo';
 
 export {
+  AlertDialog,
+  AlertDialogContent,
+  Avatar,
+  AvatarFallback,
+  AvatarImage,
   BrandLogo,
-  Cart,
-  CategoryPageHeader,
+  Card,
+  CardContent,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+  CartItem,
+  CategoryCardList,
+  CheckoutProductQuantity,
   Dialog,
   DialogClose,
   DialogContent,
@@ -29,11 +49,14 @@ export {
   DialogHeader,
   DialogTitle,
   DialogTrigger,
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
   Navbar,
   NavLinks,
-  NavMenu,
   PageFooter,
-  ProductCategories,
+  ProductCard,
   Separator,
   StoreInfo,
 };
