@@ -30,7 +30,11 @@ async function RouteLayout({ children }: RouteLayoutType) {
       <OptimisticCartContextProvider cart={cart}>
         <header className='bg-foreground'>
           <div className='px-[clamp(1.5rem,_7.5vw,_10rem)] xxl:container'>
-            <Navbar isUserSignedIn={isUserSignedIn} userName={userName} />
+            <Navbar
+              isUserSignedIn={isUserSignedIn}
+              isCartEmpty={cart.length === 0}
+              userName={userName}
+            />
           </div>
         </header>
         {children}

@@ -26,7 +26,11 @@ async function PageHeader() {
     <header className='bg-[url("/images/home/mobile/image-header.jpg")] bg-cover bg-center bg-no-repeat md:bg-[url("/images/home/tablet/image-header.jpg")] xl:bg-[url("/images/home/desktop/image-header.jpg")] xl:bg-right'>
       <div className='flex h-[clamp(37.5rem,_99vw,_46rem)] flex-col px-[clamp(1.5rem,_7.5vw,_10rem)] xxl:container'>
         <OptimisticCartContextProvider cart={cart}>
-          <Navbar isUserSignedIn={isUserSignedIn} userName={userName} />
+          <Navbar
+            isUserSignedIn={isUserSignedIn}
+            isCartEmpty={cart.length === 0}
+            userName={userName}
+          />
         </OptimisticCartContextProvider>
         <Separator className='bg-card/10' />
         <PageHero />

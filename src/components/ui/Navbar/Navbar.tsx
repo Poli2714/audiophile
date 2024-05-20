@@ -3,10 +3,11 @@ import { Cart, NavMenu, Profile } from './components';
 
 type NavbarProps = {
   isUserSignedIn: boolean;
+  isCartEmpty: boolean;
   userName: string | undefined | null;
 };
 
-function Navbar({ isUserSignedIn, userName }: NavbarProps) {
+function Navbar({ isUserSignedIn, isCartEmpty, userName }: NavbarProps) {
   return (
     <nav className='flex items-center justify-between gap-6 py-8 text-background xxl:container md:justify-normal lg:justify-between md:[&>:last-child]:ml-auto lg:[&>:last-child]:ml-0'>
       <NavMenu />
@@ -15,7 +16,7 @@ function Navbar({ isUserSignedIn, userName }: NavbarProps) {
         <NavLinks />
       </ul>
       <div className='flex gap-x-1'>
-        <Cart />
+        <Cart isCartEmpty={isCartEmpty} />
         <Profile isUserSignedIn={isUserSignedIn} userName={userName} />
       </div>
     </nav>
