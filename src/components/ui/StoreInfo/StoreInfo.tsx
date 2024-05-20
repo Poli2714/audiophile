@@ -11,6 +11,7 @@ function StoreInfo() {
           className='object-cover transition-transform duration-500 hover:scale-110'
           src={AudioGearImg}
           fill
+          sizes='33vw'
         />
       </div>
       <div className='flex max-w-xl flex-col gap-y-8 place-self-center text-center xxl:col-start-1 xxl:row-start-1 xxl:max-w-md xxl:justify-self-start xxl:text-left'>

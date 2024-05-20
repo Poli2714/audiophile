@@ -50,7 +50,6 @@ function PageFooter() {
                 alt={socialMedia.alt}
                 className='transition-transform duration-500 hover:scale-110'
                 src={socialMedia.src}
-                height={24}
                 width={24}
               />
             </Link>

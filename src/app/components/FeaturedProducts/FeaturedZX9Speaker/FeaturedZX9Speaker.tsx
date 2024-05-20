@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 
 import { Button } from '@/components/buttons';
 import ZX9SpeakerImage from '/public/images/home/image-speaker-zx9.png';
@@ -11,7 +12,7 @@ function FeaturedZX9Speaker() {
         <div className='flex items-end xl:-mb-2'>
           <Image
             alt='ZX9 Speaker'
-            className='w-[clamp(10.5rem,_26vw,_25rem)] transition-transform duration-500 group-hover:-translate-y-6 group-hover:scale-110'
+            className='h-auto w-[clamp(10.5rem,_26vw,_25rem)] transition-transform duration-500 group-hover:-translate-y-6 group-hover:scale-110'
             src={ZX9SpeakerImage}
           />
         </div>
@@ -29,8 +30,11 @@ function FeaturedZX9Speaker() {
             </p>
           </div>
           <div className='flex w-full justify-center xl:justify-start'>
-            <Button className='bg-foreground tracking-wide hover:bg-btnHover'>
-              SEE PRODUCT
+            <Button
+              asChild
+              className='bg-foreground tracking-wide hover:bg-btnHover'
+            >
+              <Link href='/product/zx9-speaker'>SEE PRODUCT</Link>
             </Button>
           </div>
         </div>

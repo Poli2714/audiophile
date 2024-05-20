@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 import { Button } from '@/components/buttons';
 
 function FeaturedYX1Earphones() {
@@ -8,8 +10,11 @@ function FeaturedYX1Earphones() {
       </div>
       <div className='flex h-[clamp(12.5rem,_45vw,_20rem)] flex-col items-start justify-center gap-8 rounded-lg bg-card pl-[clamp(1.5rem,_6.4vw,_6rem)]'>
         <h2 className='text-3xl font-semibold tracking-wide'>YX1 EARPHONES</h2>
-        <Button className='border-2 border-foreground bg-inherit font-semibold tracking-wide text-foreground hover:bg-foreground hover:text-background'>
-          SEE PRODUCT
+        <Button
+          asChild
+          className='border-2 border-foreground bg-inherit font-semibold tracking-wide text-foreground hover:bg-foreground hover:text-background'
+        >
+          <Link href='/product/yx1-earphones'>SEE PRODUCT</Link>
         </Button>
       </div>
     </section>
