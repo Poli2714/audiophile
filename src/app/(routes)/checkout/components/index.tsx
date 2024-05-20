@@ -1,3 +1,3 @@
-import CheckoutPageContent from './CheckoutContent/CheckoutContent';
+import CheckoutPageContent from './CheckoutPageContent/CheckoutPageContent';
 
 export { CheckoutPageContent };
