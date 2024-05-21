@@ -27,7 +27,7 @@ const socialMediaPlatforms = [
 function PageFooter() {
   return (
     <footer className='mt-[10.5rem] bg-foreground'>
-      <div className='container grid grid-cols-[1fr_max-content] place-items-center gap-y-12 bg-foreground py-12 text-center text-background lg:place-items-start lg:px-[clamp(2.5rem,_11.2vw,_10rem)] lg:text-left'>
+      <div className='grid grid-cols-[1fr_max-content] place-items-center gap-y-12 bg-foreground px-[clamp(1.5rem,_6.4vw,_4rem)] py-12 text-center text-background xxl:container lg:place-items-start lg:px-[clamp(4.5rem,_9.3vw,_10.3125rem)] lg:text-left'>
         <div className='col-span-2 special:col-span-1'>
           <BrandLogo />
         </div>

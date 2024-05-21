@@ -29,7 +29,7 @@ async function RouteLayout({ children }: RouteLayoutType) {
     <>
       <OptimisticCartContextProvider cart={cart}>
         <header className='bg-foreground'>
-          <div className='px-[clamp(1.5rem,_7.5vw,_10rem)] xxl:container'>
+          <div className='px-[clamp(1.5rem,_6.4vw,_4rem)] xxl:container lg:px-[clamp(4.5rem,_9.3vw,_10.3125rem)]'>
             <Navbar
               isUserSignedIn={isUserSignedIn}
               isCartEmpty={cart.length === 0}
